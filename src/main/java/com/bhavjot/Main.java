@@ -35,7 +35,6 @@ public class Main {
         userService.addItemToCart(user.getUserId(), restaurant1, farmHouse);
         userService.addItemToCart(user.getUserId(), restaurant1, loaded);
 
-//        System.out.println(userService.viewCart(1));
         Cart cart = user.getCart();
 
         System.out.println("Restaurant: " + cart.getRestaurant().getRestaurantId());
