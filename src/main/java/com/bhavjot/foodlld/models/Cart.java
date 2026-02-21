@@ -10,7 +10,7 @@ public class Cart {
 
     public Cart(User user) {
         this.user = user;
-        this.items=new ArrayList<>();
+        this.items = new ArrayList<>();
     }
 
     public void addItem(Restaurant restaurant, MenuItem menuItem) {
@@ -24,7 +24,7 @@ public class Cart {
         items.add(menuItem);
     }
 
-    public List<MenuItem> getItems(){
+    public List<MenuItem> getItems() {
         return items;
     }
 
@@ -37,7 +37,7 @@ public class Cart {
     }
 
     public void clear() {
-        this.restaurant=null;
+        this.restaurant = null;
         items.clear();
     }
 

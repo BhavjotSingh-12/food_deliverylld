@@ -5,11 +5,7 @@ import com.bhavjot.foodlld.services.OrderService;
 import com.bhavjot.foodlld.services.RestaurantService;
 import com.bhavjot.foodlld.services.UserService;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public Main() {
-    }
 
     public static void main(String[] args) {
         RestaurantService restaurantService = new RestaurantService();
@@ -18,7 +14,6 @@ public class Main {
 
 
         Restaurant restaurant1 = restaurantService.addRestaurant("Domino's", "pitampura");
-        Restaurant restaurant2 = restaurantService.addRestaurant("MC Donald's", "rohini");
 
         restaurantService
                 .getRestaurantByLocation("pitampura")
@@ -51,7 +46,5 @@ public class Main {
         System.out.println("Order Id: " + order.getOrderId());
         System.out.println("Restaurant: " + restaurant1.getRestaurantName() + " " + restaurant1.getLocation());
         System.out.println("Total: " + order.getTotal());
-
     }
-
 }

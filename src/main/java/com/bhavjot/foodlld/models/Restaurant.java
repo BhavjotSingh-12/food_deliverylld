@@ -13,7 +13,7 @@ public class Restaurant {
         return restaurantId;
     }
 
-    public String getRestaurantName(){
+    public String getRestaurantName() {
         return name;
     }
 
@@ -40,6 +40,6 @@ public class Restaurant {
         return menuItems.stream()
                 .filter(item -> item.getItemId() == itemId)
                 .findFirst()
-                .orElseThrow(()->new RuntimeException("Item Not found"));
+                .orElseThrow(() -> new RuntimeException("Item Not found"));
     }
 }

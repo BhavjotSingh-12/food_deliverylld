@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Order {
     private int orderId;
-    private List<MenuItem>menuItemList;
+    private List<MenuItem> menuItemList;
     private Restaurant restaurant;
     private User user;
     private double total;

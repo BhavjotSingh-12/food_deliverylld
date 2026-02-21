@@ -10,7 +10,7 @@ public class User {
         this.userId = userId;
         this.userName = userName;
         this.location = location;
-        this.cart=new Cart(this);
+        this.cart = new Cart(this);
     }
 
     public Cart getCart() {
